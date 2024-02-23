@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+//components
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+//icons
+import ExperienceIcon from "../components/icons/ExperienceIcon.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/icons/SocialPill.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import Email from "../components/icons/Email.astro";
+import ProjectIcon from "../components/icons/ProjectIcon.astro";
+import Map from "../components/icons/Map.astro";
+---
+
+<Layout
+  title="Mi Portfolio, Manuela Ozán - Desarrolladora y Programadora Web."
+  description="Desarrolladora Web Full Stack"
+>
+  <main class="py-4">
+    <SectionContainer class="py-36 pb-32">
+      <img
+        class="rounded-full w-14 h-14 items-center justify-between"
+        src="https://i.pinimg.com/564x/c3/16/be/c316bec9ecaa7bbd1b457e5a4e613b7a.jpg"
+        alt="img"
+      />
+      <h1
+        class="text-black text-1xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-x-4 pb-8 lg:pb-6"
+      >
+        Ey, soy Manu!
+        <a
+          href="https://www.linkedin.com/in/manuelaoz%C3%A1n/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Available for hire</Badge>
+        </a>
+      </h1>
+      <h3 class="text-xl lg:text-2xl text-wrap max-w-full">
+        <span class="text-xl font-semibold">Full Stack Developer.</span>
+        <span class="text-xl">Desarrolladora Web y Programadora.</span>
+      </h3>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/manuelaoz%C3%A1n/">
+          <LinkedIn class="w-6 h-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/manuelaozan">
+          <GitHub class="w-6 h-6" />
+          Github
+        </SocialPill>
+        <SocialPill href="mailto:manuozn96@gmail.com">
+          <Email class="w-6 h-6" />
+          manuozn96gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experience">
+      <h3
+        class="text-xl font-semibold mb-6 flex gap-x-3 items-center bg-[#c0fdff] h-1 w-60 pb-3"
+      >
+        <ExperienceIcon class="size-6 align-items" />
+        Experiencia laboral
+      </h3>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <h3 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <ProjectIcon class="size-6 align-items bg-[#f20089]" />
+        Últimos proyectos
+      </h3>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
