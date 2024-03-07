@@ -1,82 +1,122 @@
----
-import Wordpress from "../components/icons/Wordpress.astro";
-import React from "../components/icons/React.astro";
----
 
-<div
-  class="mb-4 mx-full w-auto p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mr-4"
->
-  <Wordpress class="size-7" />
-  <a href="#">
-    <h5
-      class="py-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-    >
-      E-commerce con Wordpress
-    </h5>
-  </a>
-  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-    Plataforma de comercio electrónico, utiliza WordPress como sistema de
-    gestión de contenido para administrar productos, pedidos, clientes y otras
-    funciones relacionadas con la venta en línea.
-  </p>
-  <a
-    href="#"
-    class="inline-flex font-medium items-center text-pink-600 hover:underline"
-  >
-    Ver más
-    <svg
-      class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-      aria-hidden="true"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 18 18"
-    >
-      <path
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-      ></path>
-    </svg>
-  </a>
-</div>
+<section class="text-gray-600 body-font mb-40">
+  <div class="container px-5 mx-auto">
+    <div class="flex flex-col text-center w-full">
 
-<div
-  class="max-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mr-4"
->
-  <React />
-  <a href="#">
-    <h5
-      class="py-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-    >
-      Dashboard con React
-    </h5>
-  </a>
-  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-    Muestra datos y estadísticas relevantes de manera visual, organizada y en
-    tiempo real para facilitar la toma de decisiones y el monitoreo de métricas
-    clave.
-  </p>
-  <a
-    href="#"
-    class="inline-flex font-medium items-center text-pink-600 hover:underline"
-  >
-    Ver más
-    <svg
-      class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-      aria-hidden="true"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 18 18"
-    >
-      <path
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-      ></path>
-    </svg>
-  </a>
-</div>
+    </div>
+    <div class="flex flex-wrap">
+      <div
+        class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+      >
+        <h2
+          class="font-semibold text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+        >
+          Dashboard ⎯ React
+        </h2>
+        <p class="leading-relaxed text-base mb-4 text-pretty">
+          App interactiva, visualiza datos y métricas de manera dinámica,
+          pensada para una experiencia de usuario intuitiva y personalizable.
+        </p>
+        <a class="cursor-pointer text-black-500 inline-flex items-center"
+          >Ver más
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+      >
+        <h2
+          class="font-semibold text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+        >
+          Ecommerce ⎯ Wordpress
+        </h2>
+        <p class="leading-relaxed text-base mb-4 text-pretty">
+          Utiliza complementos como WooCommerce para crear una tienda en línea.
+          Perzonaliado con temas, plugins y código para gestionar productos,
+          procesar pagos y ofrecer una experiencia de compra fluida.
+        </p>
+        <a class="cursor-pointer text-black-500 inline-flex items-center"
+          >Ver más
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+      >
+        <h2
+          class="font-semibold text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+        >
+          Expense Tracking ⎯ Next
+        </h2>
+        <p class="text-pretty leading-relaxed text-base mb-4">
+          Basado en la arquitectura de React para ofrecer una interfaz dinámica
+          y receptiva. Integrando funcionalidades de seguimiento de gastos y
+          gestión de transacciones.
+        </p>
+        <a class="cursor-pointer text-black-500 inline-flex items-center"
+          >Ver más
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+      >
+        <h2
+          class="font-semibold text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+        >
+          Bookstore ⎯ Astro
+        </h2>
+        <p class="text-pretty leading-relaxed text-base mb-4">
+          Astro, para crear páginas estáticas y dinámicas con componentes
+          reutilizables. Integra funcionalidades de una librería en línea,
+          permitiendo a los usuarios explorar, buscar y comprar libros.
+        </p>
+        <a class="cursor-pointer text-black-500 inline-flex items-center"
+          >Ver más
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+  </div>
+</section>
