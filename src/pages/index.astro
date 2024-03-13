@@ -7,6 +7,7 @@ import Experience from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
 import Aboutme from "../components/Aboutme.astro";
 import Contact from "../components/Contact.astro";
+import ReactNative from "../components/ReactNative.astro";
 
 //icons
 import ExperienceIcon from "../components/icons/ExperienceIcon.astro";
@@ -23,9 +24,9 @@ import ProjectIcon from "../components/icons/ProjectIcon.astro";
   description="Desarrolladora Web Full Stack"
 >
   <main class="py-4">
-    <SectionContainer class="py-32 pb-32">
+    <SectionContainer class="pb-32">
       <h1
-        class="text-black text-1xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-x-4 pb-8 lg:pb-6"
+        class="text-black text-1xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-x-4 pb-2 lg:pb-6"
       >
         Ey, soy Manu!
         <a
@@ -37,11 +38,10 @@ import ProjectIcon from "../components/icons/ProjectIcon.astro";
           <Badge>Available for hire</Badge>
         </a>
       </h1>
-      <h3 class="text-xl lg:text-2xl text-wrap max-w-full">
+      <h3 class="text-xl lg:text-2xl text-wrap max-w">
         <span class="text-xl font-semibold">Full Stack Developer.</span>
         <span class="text-xl">Desarrolladora Web y Programadora.</span>
       </h3>
-
       <nav class="flex gap-4 mt-8 flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/manuelaoz%C3%A1n/">
           <LinkedIn class="w-6 h-6" />
@@ -69,39 +69,28 @@ import ProjectIcon from "../components/icons/ProjectIcon.astro";
     </SectionContainer>
     <SectionContainer id="projects">
       <h3
-        class="text-xl h-1 w-4 pb-3 font-semibold mb-6 flex gap-x-3 items-center text-black mx-auto lg:w-[740px] justify-center"
+        class="text-xl h-1 w-4 pb-3 font-semibold flex gap-x-3 text-black mx-auto lg:w-[700px] justify-center"
       >
         <ProjectIcon />
         Últimos proyectos
       </h3>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-        <p class="font-semibold inline align-items justify-center">
-          mi ✨stack✨
-        </p>
-      </p>
-      <p class="inline text-pretty">
-        React y Node, mi base. Angular, Nest, Next, Express, Astro. PL/SQL, SQL,
-        Postgress, MongoDB. No puedo dejar de mencionar HTML o Typescript. Amo
-        el diseño, uso Tailwind, CSS, Figma. Conexiones de API's, tokens,
-        seguridad. Además, tengo esperiencia desarrollando y en el uso de
-        plugins en WordPress y Shopify. Unit Test, Git, Deployments, Kubernetes,
-        CI/CD, Pipelines, Jobs. Metodologías ágiles, tablero Kanban, Scrum. Jira
-        tickets.
-      </p>
     </SectionContainer>
-    <Projects class="mb-14" />
-
-    <SectionContainer id="about" class="mb-14">
+    <Projects class="mb-2" />
+    <SectionContainer class="bg-[#ffffff] w-[1000px] rounded ml-8">
+      <ReactNative />
+    </SectionContainer>
+    <SectionContainer
+      id="about"
+      class="align-items w-full items-center justify-center w-[1200px] mb-18"
+    >
       <h3
-        class="size-6 align-items w-full mx-auto lg:w-[740px] justify-center text-xl font-semibold flex gap-x-3 items-center h-1 w-40 pb-3"
+        class="size-6 align-items w-full text-xl font-semibold flex gap-x-4 items-center h-1 w-40 pb-3 justify-center"
       >
-        <User class="size-6 align-items" />
-        Sobre mí
+        <User class="size-6 align-items" /> Algo sobre mí
       </h3>
       <Aboutme />
     </SectionContainer>
-
-    <SectionContainer id="contact">
+    <SectionContainer id="contact" class="mb-22">
       <Contact />
     </SectionContainer>
   </main>
