@@ -2,6 +2,7 @@
 import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Projects from "../components/Projects.astro";
 interface Props {
   title: string;
   description: string;
@@ -11,22 +12,17 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es" class="modo-claro">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
 
-  <body>
-    <div class="absolute top-0 -z-10 h-full w-full bg-white ">
-      <div
-        class="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"
-      >
-      </div>
+  <body class="text-gray-800">
+    <div>
     </div>
     <Header />
     <slot />
@@ -35,17 +31,16 @@ const { title, description } = Astro.props;
 </html>
 <style is:global>
   :root {
-    color-scheme: light;
   }
   html {
     font-family: "Onest Variable", system-ui, sans-serif;
     scroll-behavior: smooth;
   }
   body {
-    color-scheme: light dark;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: transparent;
   }
   @media (prefers-reduced-motion: reduce) {
     html {

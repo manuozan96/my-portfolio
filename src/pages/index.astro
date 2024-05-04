@@ -1,102 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
-//components
-import Badge from "../components/Badge.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import Experience from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
-import Aboutme from "../components/Aboutme.astro";
 import Contact from "../components/Contact.astro";
-import ReactNative from "../components/ReactNative.astro";
-
-//icons
-import ExperienceIcon from "../components/icons/ExperienceIcon.astro";
-import LinkedIn from "../components/icons/LinkedIn.astro";
-import SocialPill from "../components/icons/SocialPill.astro";
-import GitHub from "../components/icons/GitHub.astro";
-import Email from "../components/icons/Email.astro";
-import User from "../components/icons/User.astro";
-import ProjectIcon from "../components/icons/ProjectIcon.astro";
+import Message from "../components/Message.astro";
 ---
 
 <Layout
-  title="Mi Portfolio, Manuela Ozán - Desarrolladora y Programadora Web."
+  title="Manuela Ozán - Desarrolladora y Programadora Web."
   description="Desarrolladora Web Full Stack"
 >
-  <main class="py-4">
-    <SectionContainer class="pb-32">
-      <h1
-        class="text-black text-1xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-x-4 pb-2 lg:pb-6"
-      >
-        Ey, soy Manu!
-        <a
-          href="https://www.linkedin.com/in/manuelaoz%C3%A1n/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge>Available for hire</Badge>
-        </a>
-      </h1>
-      <h3 class="text-xl lg:text-2xl text-wrap max-w">
-        <span class="text-xl font-semibold">Full Stack Developer.</span>
-        <span class="text-xl">Desarrolladora Web y Programadora.</span>
-      </h3>
-      <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill href="https://www.linkedin.com/in/manuelaoz%C3%A1n/">
-          <LinkedIn class="w-6 h-6" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://github.com/manuozan96">
-          <GitHub class="w-6 h-6" />
-          Github
-        </SocialPill>
-        <SocialPill href="mailto:manuozn96@gmail.com">
-          <Email class="w-6 h-6" />
-          manuozn96gmail.com
-        </SocialPill>
-      </nav>
-    </SectionContainer>
-
-    <SectionContainer id="experience" class="mb-14">
-      <h3
-        class="text-xl font-semibold mb-6 flex gap-x-3 items-center h-1 w-60 pb-3"
-      >
-        <ExperienceIcon class="size-6 align-items" />
-        Experiencia laboral
-      </h3>
-      <Experience />
-    </SectionContainer>
-    <SectionContainer id="projects">
-      <h3
-        class="text-xl h-1 w-4 pb-3 font-semibold flex gap-x-3 text-black mx-auto lg:w-[700px] justify-center"
-      >
-        <ProjectIcon />
-        Últimos proyectos
-      </h3>
-    </SectionContainer>
-    <Projects class="mb-2" />
-    <SectionContainer class="bg-[#ffffff] w-[1000px] rounded ml-8">
-      <ReactNative />
-    </SectionContainer>
-
-    <SectionContainer
-      id="about"
-      class="align-items w-full items-center justify-center w-[1000px] w-40"
-    >
-      <h3
-        class="size-6 align-items w-full text-xl font-semibold flex gap-x-4 items-center h-1 w-40 pb-3 justify-center"
-      >
-        <User class="size-6 align-items" /> Algo sobre mí
-      </h3>
-      <Aboutme />
-    </SectionContainer>
-
-    <SectionContainer
-      id="contact"
-      class="mb-22 align-items w-full flex gap-x-4 items-center"
-    >
+  <main>
+    <div>
       <Contact />
-    </SectionContainer>
+      <Projects id="projects" />
+      <Message id="message" />
+    </div>
   </main>
 </Layout>
